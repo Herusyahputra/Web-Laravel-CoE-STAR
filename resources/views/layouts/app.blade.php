@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Perusahaan Website')</title>
+    <title>@yield('title', 'Smart Transportation and Robotics (STAR)')</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,8 @@
     <style>
         /* General Styles */
         body {
+            margin: 0;
+            padding: 0;
             overflow-x: hidden;
             scroll-behavior: smooth;
             padding-top: var(--navbar-height, 70px); /* Default 70px if variable not set */
@@ -82,6 +84,8 @@
             position: relative;
             height: 100vh;
             overflow: hidden;
+            margin-top: 0;
+            padding-top: 0;
         }
         
         .hero-content {
@@ -147,6 +151,7 @@
         .navbar {
             transition: all 0.3s ease;
             padding: 15px 0;
+            margin-bottom: 0;
         }
         
         .navbar.scrolled {
@@ -357,15 +362,20 @@
 
         .role-badge {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: linear-gradient(135deg, #1a3c6e 0%, #2c5ebd 100%);
+            bottom: 0;
+            right: 0;
+            background: #0d6efd;
             color: white;
-            padding: 5px 15px;
-            border-radius: 30px;
-            font-weight: 600;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
             font-size: 14px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            border: 3px solid white;
         }
 
         /* Hexagon Image */
@@ -459,13 +469,214 @@
                 margin: 0 auto;
             }
         }
+
+        /* Team Page Styles - Circular Profile Photos */
+        .member-card {
+            position: relative;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .member-head .member-photo {
+            width: 220px;
+            height: 220px;
+            border: 5px solid #0d6efd;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .member-card:hover .member-photo img {
+            transform: scale(1.1);
+        }
+
+        .member-info {
+            padding: 10px 5px;
+        }
+
+        .member-name {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .role-badge {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            border: 3px solid white;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0d6efd;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .luxury-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 5px solid #0d6efd;
+        }
+
+        .card-header-custom {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            background-color: #f8f9fa;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #0d6efd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .card-body-custom {
+            padding: 30px;
+        }
+
+        .section-title {
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: #0d6efd;
+        }
+
+        .team-hero {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .gold-divider {
+            width: 80px;
+            height: 3px;
+            background: #ffc107;
+        }
+
+        .elegant-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .team-content {
+            background-color: #f8f9fa;
+        }
+
+        .team-intro {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 767px) {
+            .member-photo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .member-head .member-photo {
+                width: 180px;
+                height: 180px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Smart Transfortaion and Robotics (STAR)</a>
+            <a class="navbar-brand" href="{{ url('/') }}">Smart Transportation and Robotics (STAR)</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

@@ -6,20 +6,20 @@
 <!-- Hero Section -->
 <section class="hero-section" id="home">
     <div class="position-relative d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <img src="{{ asset('images/banner.jpg') }}" class="img-fluid w-100" style="height: 100vh; object-fit: cover; filter: brightness(0.8);">
-        <div class="hero-content position-absolute" style="width: 150%; max-width: 1400px;">
+        <img src="{{ asset('images/banner.jpg') }}" class="img-fluid w-100" style="height: 120vh; object-fit: cover; filter: brightness(0.8);">
+        <div class="hero-content position-absolute" style="width: 130%; max-width: 1600px;">
             <div class="container-fluid px-0">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="hero-card" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.2);">
+                        <div class="hero-card py-4" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.1); max-width: 90%; margin: 0 auto;">
                             <div class="row g-0">
                                 <!-- Ketua Photo Section -->
                                 <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
-                                    <img src="{{ asset('images/leader.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 380px;">
+                                    <img src="{{ asset('images/leader.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 420px;">
                                 </div>
                                 <!-- Quote Section -->
                                 <div class="col-md-5 d-flex align-items-center">
-                                    <div class="p-4" data-aos="fade-left" data-aos-delay="400">
+                                    <div class="p-4 py-5" data-aos="fade-left" data-aos-delay="400">
                                         <p class="text-uppercase small mb-2">Telkom University | The Best Private University in Indonesia </p>
                                         <h5 class="fw-bold mb-3" style="color: #0d6efd;">Welcome to the Center of Excellence (CoE)</h5>
 
@@ -28,7 +28,7 @@
                                                 <i class="fas fa-quote-left fa-2x text-muted opacity-50"></i>
                                             </div>
                                             <p class="fst-italic"> Smart Transportation and Robotics (STAR) at Telkom University. As a leading hub for research and innovation, we are dedicated to advancing cutting-edge studies in intelligent transportation and robotics. Our focus spans across smart mobility systems, signaling, telecommunications, power systems, train control, operations, and robotic technologies. Driven by a spirit of collaboration and innovation, CoE STAR is committed to fostering connectivity and convergence for smart living.</p>
-                                            <div class="d-flex align-items-center mt-3">
+                                            <div class="d-flex align-items-center mt-4">
                                                 <div class="border-end pe-3 me-3">
                                                     <h5 class="mb-0">Dr. Eng. Ahmad Sugiana, S.Si.,M.T</h5>
                                                     <p class="small text-muted mb-0">Director</p>
@@ -118,14 +118,6 @@
         </div>
     </div>
 </section>
-
-
-<!-- Diagonal Divider -->
-<div class="section-divider" style="background-color: #f8f9fa;">
-    <div class="divider-diagonal"></div>
-</div>
-
-
 
 
 <!-- Team Section -->
@@ -300,47 +292,89 @@
 </section>
 
 
-    <!-- Optionally Add: News Carousel / Timeline Here -->
-  </div>
-</section>
 
 
 
 
-
-
-        </div>
-    </div>
-</section>
-
-
-<!-- Curves Divider -->
-<div class="section-divider">
-    <div class="divider-curves"></div>
-</div>
 
 <!-- partner -->
 <section class="partner-section py-5 bg-light" id="partner">
-    <div class="container">
-        <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="fw-bold">Our Partners</h2>
-            <p class="text-muted">Kolaborasi strategis untuk mendukung riset dan pengembangan inovatif.</p>
-        </div>
-        <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-6 col-md-3 text-center">
-                <img src="{{ asset('images/partner1.png') }}" class="img-fluid grayscale-hover" alt="Partner 1" style="max-height: 80px;">
-            </div>
-            <div class="col-6 col-md-3 text-center">
-                <img src="{{ asset('images/partner2.png') }}" class="img-fluid grayscale-hover" alt="Partner 2" style="max-height: 80px;">
-            </div>
-            <div class="col-6 col-md-3 text-center">
-                <img src="{{ asset('images/partner3.png') }}" class="img-fluid grayscale-hover" alt="Partner 3" style="max-height: 80px;">
-            </div>
-            <div class="col-6 col-md-3 text-center">
-                <img src="{{ asset('images/partner4.png') }}" class="img-fluid grayscale-hover" alt="Partner 4" style="max-height: 80px;">
-            </div>
-        </div>
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Our Partners</h2>
+      <p class="text-muted">Kolaborasi strategis untuk mendukung riset dan pengembangan inovatif.</p>
     </div>
-</section>
+    <!-- Animated logo showcase -->
+    <div class="partner-logos-wrapper overflow-hidden position-relative" style="height: 110px;">
+      <div class="partner-logos d-flex align-items-center" style="width: max-content;">
+      @php
+        $partners = [
+        'partner1.png',
+        'partner2.png',
+        'partner3.png',
+        'partner4.png'
+        ];
+      @endphp
+      @for ($i = 0; $i < 2; $i++)
+        @foreach ($partners as $logo)
+        <div class="mx-4 flex-shrink-0">
+          <img src="{{ asset('images/' . $logo) }}" class="img-fluid grayscale-hover" alt="Partner Logo" style="max-height: 80px;">
+        </div>
+        @endforeach
+      @endfor
+      </div>
+        </div>
+        </div>
+      </section>
+
+      <style>
+      .partner-logos-wrapper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .partner-logos {
+        display: flex;
+        align-items: center;
+        /* 36s x 2 x 1.75 = 126s (pelan lagi 75%) */
+        animation: partner-scroll 126s linear infinite;
+        width: max-content;
+      }
+      @keyframes partner-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .partner-logos img {
+        transition: filter 0.3s, transform 0.3s;
+        filter: grayscale(100%);
+      }
+      .partner-logos img.grayscale-hover:hover {
+        filter: grayscale(0%);
+        transform: scale(1.08);
+        z-index: 2;
+      }
+      </style>
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Adjust animation dynamically for seamless effect
+        const wrapper = document.querySelector('.partner-logos-wrapper');
+        const logos = document.querySelector('.partner-logos');
+        if (wrapper && logos) {
+          const wrapperWidth = wrapper.offsetWidth;
+          const logosWidth = logos.scrollWidth / 2;
+          // Set animation distance based on actual content, slowed by 50% x 50% x 75% (total 6.25% speed)
+          logos.style.animationDuration = ((logosWidth / 80 * 3) * 4 * 1.75) + 's';
+          logos.style.minWidth = (logosWidth * 2) + 'px';
+          // Responsive: duplicate more if needed
+          if (logosWidth < wrapperWidth) {
+        let html = '';
+        for (let i = 0; i < Math.ceil(wrapperWidth / logosWidth); i++) {
+          html += logos.innerHTML;
+        }
+        logos.innerHTML = html;
+          }
+        }
+      });
+      </script>
 
 @endsection
