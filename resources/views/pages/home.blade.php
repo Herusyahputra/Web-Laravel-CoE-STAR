@@ -128,7 +128,7 @@
 <!-- Team Section -->
 <section class="team-section" id="team">
     <div class="container my-5">
-    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Product</h2>
+    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Product & Development</h2>
 
     <!-- Kategori 1 -->
     <div class="mb-5">
@@ -138,114 +138,68 @@
         </p>
     </div>
 </div>
+<!-- Team Section -->
+<section class="team-section" id="team">
+    <div class="container my-5">
+    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Research & Project Funding Sources of CoE | STAR</h2>
 
-<!-- Vice Director Section -->
-<div class="container my-5">
-    <div class="text-center" data-aos="fade-up">
-        <h5 class="text-uppercase mb-4" style="border-bottom: 2px solid #0d6efd; color: #0d6efd; display: inline-block;">
-            Vice Director
-        </h5>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
-            <img src="{{ asset('images/vicedirector.jpg') }}" class="rounded-circle mb-3 shadow" style="width: 180px; height: 180px; object-fit: cover;" alt="Vice Director">
-            <h6 class="fw-bold text-primary mb-0">Basith Abdurrohman Asy'ari, S.TrT., M.T.</h6>
-            <p class="text-muted">Secretary | Center of Excellence</p>
-        </div>
-    </div>
-</div>
 
-<!-- Tim Riset CoE STAR -->
+<!-- CoE STAR Research Team -->
 <div class="container">
-
-    <!-- Template Struktur Tim -->
-    @php
-    $divisions = [
-        [
-            'title' => 'Intelligent Mobility System',
-            'head' => ['name' => 'Angga Rusdinar, S.T., M.T., Ph.D', 'role' => 'AGR', 'image' => 'member1.jpg'],
-            'members' => [
-                ['name' => 'Irwwan Purnama, S.T., M.Sc.Eng.Ph.D.', 'image' => 'member4.jpg'],
-                ['name' => 'Ramdhan Nugraha, S.Pd.,Ph.D, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-            ]
-        ],
-        [
-            'title' => 'Intelligent Robotics',
-            'head' => ['name' => 'M. Zakiyullah Romdlony, S.T., M.T., Ph.D', 'role' => 'ZAR', 'image' => 'member2.jpg'],
-            'members' => [
-                 ['name' => 'Dr. Ir, Sony Sunaryo, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Erwin Susanto, S.T.M.T.,Ph.D', 'image' => 'member5.jpg'],
-                ['name' => 'Ir Porman Pangaribuan, S.T.M.T', 'image' => 'member6.jpg'],
-                ['name' => 'Muhammad Azhar Ismail, S.T.M.T', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-            ]
-        ],
-        [
-            'title' => 'Intelligent Railway System',
-            'head' => ['name' => 'Heru Syah Putra, S.Kom., M.Sc.Eng', 'role' => 'HUE', 'image' => 'hue.png'],
-            'members' => [
-                 ['name' => 'Kharisma Bani Adam, S.T., M.T., Ph.D', 'image' => 'member4.jpg'],
-                ['name' => 'Agung Surya Wibowo, S.T., M.T.,Ph.D', 'image' => 'member5.jpg'],
-                ['name' => 'Muhammad Ramdhani, S.T.,M.T', 'image' => 'member6.jpg'],
-                ['name' => 'M. Rivaldi Ali ASeptian, S.T..,M.Sc.Eng', 'image' => 'member5.jpg'],
-                ['name' => 'Fussy Mentari Dirgantara, S.T.M.T', 'image' => 'member6.jpg'],
-                ['name' => 'Nurwulan Fitriyanti, S.Pd., M.Si, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-            ]
-        ],
-        [
-            'title' => 'Intelligent Transportation',
-            'head' => ['name' => 'Surya M. Nasution, S.T., M.T., Ph.D', 'role' => 'SMN', 'image' => 'member13.jpg'],
-            'members' => [
-                ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-            ]
-        ]
-    ];
-    @endphp
-
-    @foreach($divisions as $index => $division)
-    <div class="mb-5 border-top pt-5">
-        <h5 class="text-uppercase text-center mb-4" data-aos="fade-up" data-aos-delay="100">{{ $division['title'] }}</h5>
-        
-        <!-- Head -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="150">
-                <img src="{{ asset('images/' . $division['head']['image']) }}" class="rounded-circle mb-2 border border-3 border-primary" style="width: 150px; height: 150px; object-fit: cover;">
-                <h6><strong>{{ $division['head']['name'] }}</strong><br><small>Head | {{ $division['head']['role'] }}</small></h6>
-            </div>
-        </div>
-
-        <!-- Members -->
-        <div class="row justify-content-center">
-            @foreach($division['members'] as $i => $member)
-            <div class="col-md-3 text-center mb-3" data-aos="fade-up" data-aos-delay="{{ 200 + $i * 50 }}">
-                <img src="{{ asset('images/' . $member['image']) }}" class="rounded-circle mb-2 border" style="width: 150px; height: 150px; object-fit: cover;">
-                <h6>{{ $member['name'] }}</h6>
-            </div>
-            @endforeach
-        </div>
-    </div>
-    @endforeach
-
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-primary text-center">
+            <tr>
+                <th>No</th>
+                <th>Funding Title</th>
+                <th>Type</th>
+                <th>Involved Members</th>
+                <th>Total Funding</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="{{ asset('pdfs/riset-fisheye-ai-2024.pdf') }}" target="_blank" class="text-decoration-none text-primary fw-semibold">
+                        Fisheye and AI Research for Robotic Navigation
+                    </a>
+                </td>
+                <td>Internal Research</td>
+                <td>Heru S.P., Eriyanti, Zakiyullah R.</td>
+                <td>IDR 75,000,000</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="{{ asset('pdfs/project-kai-arching-2023.pdf') }}" target="_blank" class="text-decoration-none text-primary fw-semibold">
+                        Electrical Arching Detection Project for KAI
+                    </a>
+                </td>
+                <td>Industrial Project</td>
+                <td>Heru S.P., Kharisma B.A., Fussy M.D.</td>
+                <td>IDR 125,000,000</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="{{ asset('pdfs/matching-grant-sawit-2025.pdf') }}" target="_blank" class="text-decoration-none text-primary fw-semibold">
+                        Palm Oil Digitalization Matching Grant
+                    </a>
+                </td>
+                <td>Matching Fund</td>
+                <td>Heru S.P., Dina M., Porman P.</td>
+                <td>IDR 300,000,000</td>
+                <td>2025</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+
+
 
 
         </div>
