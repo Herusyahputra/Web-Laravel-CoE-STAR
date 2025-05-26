@@ -228,7 +228,6 @@
                         <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                             <li><a class="dropdown-item" href="{{ url('/about') }}">Profil</a></li>
                             <li><a class="dropdown-item" href="{{ url('/visi-misi') }}">Visi & Misi</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/sejarah') }}">Sejarah</a></li>
                         </ul>
                     </li>
                     
