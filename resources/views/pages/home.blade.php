@@ -125,19 +125,9 @@
     <div class="divider-diagonal"></div>
 </div>
 
-<!-- Team Section -->
-<section class="team-section" id="team">
-    <div class="container my-5">
-    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Product & Development</h2>
 
-    <!-- Kategori 1 -->
-    <div class="mb-5">
-        <h4 class="text-center mb-4 text-uppercase text-secondary" data-aos="fade-up" data-aos-delay="100">Meet the Innovators Behind CoE STAR</h4>
-        <p class="text-center mx-auto w-75 lead" data-aos="fade-up" data-aos-delay="150">
-            The <strong>Center of Excellence for Smart Technology and Applied Research (CoE STAR)</strong> is powered by four cutting-edge research divisions. Each division is led by visionary experts and supported by passionate researchers who are redefining the future through innovation in mobility, robotics, transportation, and railway systems. Discover the brilliant minds driving breakthrough technologies below.
-        </p>
-    </div>
-</div>
+
+
 <!-- Team Section -->
 <section class="team-section" id="team">
     <div class="container my-5">
@@ -197,6 +187,123 @@
         </tbody>
     </table>
 </div>
+
+<!-- Product & Development Section -->
+<section id="product-development" class="py-5" style="background: linear-gradient(135deg, #e9f2ff, #f4f9ff);">
+  <div class="container">
+    <!-- Title -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-5 fw-bold text-primary">
+        <i class="bi bi-lightning-charge-fill me-2 text-warning"></i>Product & Development
+      </h2>
+      <p class="text-muted fs-5">Explore our innovations turning research into real-world impact.</p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Card 1 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="card h-100 border-0 shadow-lg position-relative overflow-hidden">
+          <div class="position-relative">
+            <img src="images/prototype-agv.jpg" class="card-img-top" alt="AGV Prototype">
+            <span class="badge bg-primary position-absolute top-0 start-0 m-3 shadow-sm">Prototype</span>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-semibold mb-2">AGV with Fisheye Navigation</h5>
+            <p class="card-text text-muted small">
+              A smart indoor robot equipped with a 220° fisheye camera and 3D localization, boosting autonomous navigation accuracy in dynamic environments.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="text-muted small"><i class="bi bi-robot me-1"></i> Intelligent Robotics</span>
+              <a href="pdfs/agv-fisheye-report.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+                <i class="bi bi-file-earmark-text me-1"></i>View Report
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="card h-100 border-0 shadow-lg position-relative overflow-hidden">
+          <div class="position-relative">
+            <img src="images/rail-detection.jpg" class="card-img-top" alt="Rail Detection System">
+            <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm">Industry Project</span>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-semibold mb-2">Rail & Arcing Detection System</h5>
+            <p class="card-text text-muted small">
+              A dual-camera rail monitoring system that detects track faults and electrical arcing in real-time, improving railway safety and predictive maintenance.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="text-muted small"><i class="bi bi-train-front me-1"></i> Intelligent Railway System</span>
+              <a href="pdfs/rail-detection-2023.pdf" target="_blank" class="btn btn-sm btn-outline-success rounded-pill px-3">
+                <i class="bi bi-file-earmark-text me-1"></i>View Report
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 1 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="card h-100 border-0 shadow-lg position-relative overflow-hidden">
+          <div class="position-relative">
+            <img src="images/prototype-agv.jpg" class="card-img-top" alt="AGV Prototype">
+            <span class="badge bg-primary position-absolute top-0 start-0 m-3 shadow-sm">Prototype</span>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-semibold mb-2">AGV with Fisheye Navigation</h5>
+            <p class="card-text text-muted small">
+              A smart indoor robot equipped with a 220° fisheye camera and 3D localization, boosting autonomous navigation accuracy in dynamic environments.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="text-muted small"><i class="bi bi-robot me-1"></i> Intelligent Robotics</span>
+              <a href="pdfs/agv-fisheye-report.pdf" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+                <i class="bi bi-file-earmark-text me-1"></i>View Report
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="card h-100 border-0 shadow-lg position-relative overflow-hidden">
+          <div class="position-relative">
+            <img src="images/rail-detection.jpg" class="card-img-top" alt="Rail Detection System">
+            <span class="badge bg-success position-absolute top-0 start-0 m-3 shadow-sm">Industry Project</span>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-semibold mb-2">Rail & Arcing Detection System</h5>
+            <p class="card-text text-muted small">
+              A dual-camera rail monitoring system that detects track faults and electrical arcing in real-time, improving railway safety and predictive maintenance.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="text-muted small"><i class="bi bi-train-front me-1"></i> Intelligent Railway System</span>
+              <a href="pdfs/rail-detection-2023.pdf" target="_blank" class="btn btn-sm btn-outline-success rounded-pill px-3">
+                <i class="bi bi-file-earmark-text me-1"></i>View Report
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Optional More -->
+    <!-- <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
+      <a href="#all-projects" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
+        <i class="bi bi-boxes me-1"></i>View All Innovations
+      </a>
+    </div> -->
+  </div>
+</section>
+
+
+    <!-- Optionally Add: News Carousel / Timeline Here -->
+  </div>
+</section>
+
 
 
 
