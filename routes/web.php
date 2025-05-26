@@ -36,3 +36,11 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+
+Route::get('/visi-misi', function () {
+    return view('pages.visi-misi');
+});
+
+Route::get('/team', function () {
+    return view('pages.team');
+});
