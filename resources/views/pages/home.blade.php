@@ -189,7 +189,7 @@
         ],
         [
             'title' => 'Intelligent Railway System',
-            'head' => ['name' => 'Heru Syah Putra, S.Kom., M.Sc.Eng', 'role' => 'HUE', 'image' => '/home/lumiatech/Documents/GitHub/COE-STAR-PROFILE/public/images/hue.png'],
+            'head' => ['name' => 'Heru Syah Putra, S.Kom., M.Sc.Eng', 'role' => 'HUE', 'image' => 'hue.png'],
             'members' => [
                  ['name' => 'Kharisma Bani Adam, S.T., M.T., Ph.D', 'image' => 'member4.jpg'],
                 ['name' => 'Agung Surya Wibowo, S.T., M.T.,Ph.D', 'image' => 'member5.jpg'],
