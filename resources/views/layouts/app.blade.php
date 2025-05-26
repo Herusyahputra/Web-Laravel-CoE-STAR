@@ -17,11 +17,24 @@
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     
+    <!-- Yield for additional CSS from specific pages -->
+    @yield('extra-css')
+    
     <style>
         /* General Styles */
         body {
             overflow-x: hidden;
             scroll-behavior: smooth;
+            padding-top: var(--navbar-height, 70px); /* Default 70px if variable not set */
+        }
+        
+        :root {
+            --navbar-height: 70px;
+        }
+        
+        /* Add this style to create space for fixed navbar */
+        main {
+            padding-top: var(--navbar-height);
         }
         
         /* Section Dividers */
@@ -192,6 +205,228 @@
             }
         }
         
+        /* Team Page Styles */
+        /* Hero Section */
+        .team-hero {
+            height: 60vh;
+            min-height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+
+        .hero-content {
+            z-index: 2;
+            padding: 2rem 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+            z-index: 1;
+        }
+
+        .parallax-bg {
+            background-attachment: fixed;
+        }
+
+        /* Luxury Elements */
+        .gold-divider {
+            width: 70px;
+            height: 3px;
+            background: linear-gradient(90deg, #c39738 0%, #ffeb99 50%, #c39738 100%);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .elegant-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .elegant-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #c39738 0%, #ffeb99 50%, #c39738 100%);
+        }
+
+        .team-intro {
+            position: relative;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Cards Styling */
+        .luxury-card {
+            position: relative;
+            border-radius: 15px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: none;
+        }
+
+        .card-header-custom {
+            position: relative;
+            padding: 2rem;
+            background: linear-gradient(135deg, #1a3c6e 0%, #2c5ebd 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .card-body-custom {
+            padding: 2rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #1a3c6e 0%, #2c5ebd 100%);
+            border-radius: 3px;
+        }
+
+        /* Member Cards */
+        .member-card {
+            position: relative;
+            padding: 15px;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-head {
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-info {
+            padding: 15px 0 0;
+        }
+
+        .member-name {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .role-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #1a3c6e 0%, #2c5ebd 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hexagon Image */
+        .hexagon {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 115%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .hexagon-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+            overflow: hidden;
+        }
+
+        .hexagon img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .member-card:hover .hexagon img {
+            transform: scale(1.1);
+        }
+
+        /* Social Icons */
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin: 0 5px;
+            background: #f0f0f0;
+            color: #333;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #1a3c6e;
+            color: white;
+            transform: translateY(-3px);
+        }
+
         /* Media Queries */
         @media (max-width: 768px) {
             .section-divider {
@@ -202,6 +437,26 @@
             }
             .hero-content {
                 padding: 20px;
+            }
+            .team-hero {
+                height: 40vh;
+            }
+            
+            .card-header-custom {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+            
+            .icon-circle {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .member-card {
+                max-width: 250px;
+                margin: 0 auto;
             }
         }
     </style>
@@ -260,34 +515,67 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light py-4 footer-section">
-        <div class="container">
-            <div class="row g-0">
-                <!-- Left Card -->
-                <div class="col-md-7" data-aos="fade-right" data-aos-offset="200">
-                    <div class="card bg-light h-100 border-0" style="border-radius: 0;">
-                        <div class="card-body">
-                            <p>&copy; CoE Smart Transportation And Robotics (STAR) . All rights reserved.</p>
+    <footer class="footer-luxury">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">CoE STAR</h3>
+                            <div class="gold-divider-sm my-3"></div>
+                            <p class="footer-desc">Centre of Excellence for Smart Transportation And Robotics</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <div class="gold-divider-xs mb-4"></div>
+                        <ul class="footer-links">
+                            <li><a href="{{ url('/about') }}">About Us</a></li>
+                            <li><a href="{{ url('/visi-misi') }}">Visi & Misi</a></li>
+                            <li><a href="{{ url('/penelitian') }}">Research</a></li>
+                            <li><a href="{{ url('/team') }}">Our Team</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-12">
+                        <h4 class="footer-heading">Contact Information</h4>
+                        <div class="gold-divider-xs mb-4"></div>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl. Telekomunikasi No. 1, Bandung<br>Terusan Buahbatu - Bojongsoang, Sukapura,<br>Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>coestar@telkomuniversity.ac.id</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>(022) 7564108</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- Right Card -->
-                <div class="col-md-5" data-aos="fade-left" data-aos-offset="200">
-                    <div class="card bg-dark text-white h-100 border-0" style="border-radius: 0; margin-right: 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">LOGO</h5>
-                            <p class="card-text">
-                                Address: Jl. Telekomunikasi No. 1, Bandung Terusan Buahbatu - Bojongsoang, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257<br>
-                                Email: coestar@telkomuniversity.ac.id<br>
-                                Phone: (022) 7564108
-                            </p>
-                            <div class="mt-3">
-                                <a href="#" class="btn btn-outline-light btn-sm me-2">Facebook</a>
-                                <a href="#" class="btn btn-outline-light btn-sm me-2">Twitter</a>
-                                <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <p class="mb-0 text-white">&copy; {{ date('Y') }} Centre of Excellence STAR. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
                     </div>
                 </div>
             </div>

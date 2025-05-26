@@ -52,6 +52,7 @@
     </div>
 </section>
 
+
 <!-- Wave Divider -->
 <div class="section-divider" style="background-color: #212529;">
     <div class="divider-wave"></div>
@@ -127,7 +128,7 @@
 <!-- Team Section -->
 <section class="team-section" id="team">
     <div class="container my-5">
-    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Research Division</h2>
+    <h2 class="text-center mb-5 display-5 fw-bold text-primary" data-aos="fade-up">Product</h2>
 
     <!-- Kategori 1 -->
     <div class="mb-5">
@@ -137,6 +138,7 @@
         </p>
     </div>
 </div>
+
 <!-- Vice Director Section -->
 <div class="container my-5">
     <div class="text-center" data-aos="fade-up">
@@ -255,4 +257,29 @@
 <div class="section-divider">
     <div class="divider-curves"></div>
 </div>
+
+<!-- partner -->
+<section class="partner-section py-5 bg-light" id="partner">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold">Our Partners</h2>
+            <p class="text-muted">Kolaborasi strategis untuk mendukung riset dan pengembangan inovatif.</p>
+        </div>
+        <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-3 text-center">
+                <img src="{{ asset('images/partner1.png') }}" class="img-fluid grayscale-hover" alt="Partner 1" style="max-height: 80px;">
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="{{ asset('images/partner2.png') }}" class="img-fluid grayscale-hover" alt="Partner 2" style="max-height: 80px;">
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="{{ asset('images/partner3.png') }}" class="img-fluid grayscale-hover" alt="Partner 3" style="max-height: 80px;">
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="{{ asset('images/partner4.png') }}" class="img-fluid grayscale-hover" alt="Partner 4" style="max-height: 80px;">
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
