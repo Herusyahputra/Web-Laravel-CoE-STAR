@@ -309,16 +309,24 @@
       <div class="partner-logos d-flex align-items-center" style="width: max-content;">
       @php
         $partners = [
-        'partner1.png',
-        'partner2.png',
-        'partner3.png',
-        'partner4.png'
+        '/partner/brin.png',
+        'partner/citra.jpeg',
+        'partner/defend.png',
+        'partner/inka.png',
+        'partner/jakarta-lrt.png',
+        'partner/kai.jpeg',
+        'partner/kaicommuter.jpg',
+        'partner/kaproperti.jpg',
+        'partner/kcic.png',
+        'partner/lrs.png',
+        'partner/mrt.png',
+        'partner/thano.jpg',
         ];
       @endphp
       @for ($i = 0; $i < 2; $i++)
         @foreach ($partners as $logo)
         <div class="mx-4 flex-shrink-0">
-          <img src="{{ asset('images/' . $logo) }}" class="img-fluid grayscale-hover" alt="Partner Logo" style="max-height: 80px;">
+          <img src="{{ asset('images/' . $logo) }}" class="img-fluid" alt="Partner Logo" style="max-height: 80px;">
         </div>
         @endforeach
       @endfor
@@ -333,23 +341,25 @@
         position: relative;
         overflow: hidden;
       }
+
       .partner-logos {
         display: flex;
         align-items: center;
-        /* 36s x 2 x 1.75 = 126s (pelan lagi 75%) */
         animation: partner-scroll 126s linear infinite;
         width: max-content;
       }
+
       @keyframes partner-scroll {
         0% { transform: translateX(0); }
         100% { transform: translateX(-50%); }
       }
+
       .partner-logos img {
-        transition: filter 0.3s, transform 0.3s;
-        filter: grayscale(100%);
+        transition: transform 0.3s;
+        /* Remove grayscale filter */
       }
-      .partner-logos img.grayscale-hover:hover {
-        filter: grayscale(0%);
+
+      .partner-logos img:hover {
         transform: scale(1.08);
         z-index: 2;
       }

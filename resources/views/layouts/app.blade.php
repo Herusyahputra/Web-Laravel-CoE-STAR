@@ -670,6 +670,157 @@
                 height: 180px;
             }
         }
+
+        /* Enhanced Footer Styles */
+.footer-luxury {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 5px solid #0d6efd;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #0d6efd, #0099ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-tagline {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.social-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.social-circle:hover {
+    transform: translateY(-3px);
+    background: #0d6efd;
+    color: white;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.hover-text {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: #6c757d;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.social-circle:hover .hover-text {
+    opacity: 1;
+    bottom: -30px;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a:hover {
+    color: #0d6efd;
+    transform: translateX(5px);
+}
+
+.footer-links i {
+    font-size: 0.8rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.2rem;
+    align-items: flex-start;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background: #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info strong {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .footer-widget {
+        margin-bottom: 2rem;
+    }
+    
+    .social-circle {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .hover-text {
+        display: none;
+    }
+}
     </style>
 </head>
 <body>
@@ -727,71 +878,94 @@
 
     <!-- Footer -->
     <footer class="footer-luxury">
-        <div class="footer-top">
+        <div class="footer-top py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                        <div class="footer-brand">
-                            <h3 class="footer-logo">CoE STAR</h3>
+                        <div class="footer-brand" data-aos="fade-up">
+                            <h3 class="footer-logo text-gradient">CoE STAR</h3>
                             <div class="gold-divider-sm my-3"></div>
                             <p class="footer-desc">Centre of Excellence for Smart Transportation And Robotics</p>
+                            <p class="footer-tagline mt-3">Advancing Innovation in Transportation and Robotics Technology</p>
                         </div>
-                        <div class="footer-social">
-                            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                        <div class="footer-social" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="social-circle" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="hover-text">Facebook</span>
+                            </a>
+                            <a href="#" class="social-circle" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="hover-text">Twitter</span>
+                            </a>
+                            <a href="#" class="social-circle" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="hover-text">Instagram</span>
+                            </a>
+                            <a href="#" class="social-circle" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="hover-text">LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-circle" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span class="hover-text">YouTube</span>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <h4 class="footer-heading">Quick Links</h4>
-                        <div class="gold-divider-xs mb-4"></div>
-                        <ul class="footer-links">
-                            <li><a href="{{ url('/about') }}">About Us</a></li>
-                            <li><a href="{{ url('/visi-misi') }}">Visi & Misi</a></li>
-                            <li><a href="{{ url('/penelitian') }}">Research</a></li>
-                            <li><a href="{{ url('/team') }}">Our Team</a></li>
-                            <li><a href="{{ url('/contact') }}">Contact Us</a></li>
-                        </ul>
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <div class="gold-divider-xs mb-4"></div>
+                            <ul class="footer-links">
+                                <li><a href="{{ url('/about') }}" class="link-hover"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                                <li><a href="{{ url('/visi-misi') }}" class="link-hover"><i class="fas fa-chevron-right"></i>Visi & Misi</a></li>
+                                <li><a href="{{ url('/penelitian') }}" class="link-hover"><i class="fas fa-chevron-right"></i>Research</a></li>
+                                <li><a href="{{ url('/team') }}" class="link-hover"><i class="fas fa-chevron-right"></i>Our Team</a></li>
+                                <li><a href="{{ url('/contact') }}" class="link-hover"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <div class="col-lg-5 col-md-12">
-                        <h4 class="footer-heading">Contact Information</h4>
-                        <div class="gold-divider-xs mb-4"></div>
-                        <ul class="footer-contact">
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Jl. Telekomunikasi No. 1, Bandung<br>Terusan Buahbatu - Bojongsoang, Sukapura,<br>Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>coestar@telkomuniversity.ac.id</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span>(022) 7564108</span>
-                            </li>
-                        </ul>
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="footer-heading">Contact Information</h4>
+                            <div class="gold-divider-xs mb-4"></div>
+                            <ul class="footer-contact">
+                                <li class="contact-item">
+                                    <div class="icon-box">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <strong>Address:</strong>
+                                        <p>Jl. Telekomunikasi No. 1, Bandung<br>Terusan Buahbatu - Bojongsoang, Sukapura,<br>Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
+                                    </div>
+                                </li>
+                                <li class="contact-item">
+                                    <div class="icon-box">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <strong>Email:</strong>
+                                        <p>coestar@telkomuniversity.ac.id</p>
+                                    </div>
+                                </li>
+                                <li class="contact-item">
+                                    <div class="icon-box">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <strong>Phone:</strong>
+                                        <p>(022) 7564108</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
-                    <p class="mb-0 text-white">&copy; {{ date('Y') }} Centre of Excellence STAR. All rights reserved.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+ 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
