@@ -854,8 +854,8 @@
                             Service
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="{{ url('/konsultasi') }}">Community Service</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/penelitian') }}">Research our Teams</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/community') }}">Community Service</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/research') }}">Research our Teams</a></li>
                         </ul>
                     </li>
                     
