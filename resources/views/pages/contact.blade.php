@@ -3,7 +3,7 @@
 @section('title', 'Contact Us')
 
 @section('content')
-<div class="container my-5">
+<div class="container mt-5 py-5">
     <h1 class="mb-4">Contact Us</h1>
     <div class="row">
         <div class="col-md-6">

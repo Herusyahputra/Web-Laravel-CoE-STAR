@@ -32,54 +32,38 @@
         $divisions = [
             [
                 'title' => 'Intelligent Mobility System',
-                'icon' => 'fa-car-side',
-                'head' => ['name' => 'Angga Rusdinar, S.T., M.T., Ph.D', 'role' => 'AGR', 'image' => 'member1.jpg'],
+                'head' => ['name' => 'Angga Rusdinar, S.T., M.T., Ph.D', 'image' => '/member/anggarusdinar.png'],
                 'members' => [
-                    ['name' => 'Irwwan Purnama, S.T., M.Sc.Eng.Ph.D.', 'image' => 'member4.jpg'],
-                    ['name' => 'Ramdhan Nugraha, S.Pd.,Ph.D, S.T.', 'image' => 'member5.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
+                    ['name' => 'Irwan Purnama, S.T., M.Sc.Eng.Ph.D.', 'image' => 'member4.jpg'],
+                    ['name' => 'Ramdhan Nugraha, S.Pd.,Ph.D, S.T.', 'image' => '/member/ramdhannugraha.png'],
                 ]
             ],
             [
                 'title' => 'Intelligent Robotics',
-                'icon' => 'fa-robot',
-                'head' => ['name' => 'M. Zakiyullah Romdlony, S.T., M.T., Ph.D', 'role' => 'ZAR', 'image' => 'member2.jpg'],
+                'head' => ['name' => 'M. Zakiyullah Romdlony, S.T., M.T., Ph.D',  'image' => '/member/zakiyullah.png'],
                 'members' => [
-                     ['name' => 'Dr. Ir, Sony Sunaryo, S.T., M.T.', 'image' => 'member4.jpg'],
-                    ['name' => 'Erwin Susanto, S.T.M.T.,Ph.D', 'image' => 'member5.jpg'],
-                    ['name' => 'Ir Porman Pangaribuan, S.T.M.T', 'image' => 'member6.jpg'],
-                    ['name' => 'Muhammad Azhar Ismail, S.T.M.T', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
+                     ['name' => 'Dr. Ir, Sony Sunaryo, S.T., M.T.', 'image' => '/member/sonysunaryo.png'],
+                    ['name' => 'Erwin Susanto, S.T.M.T.,Ph.D', 'image' => '/member/erwinsusanto.png'],
+                    ['name' => 'Ir Porman Pangaribuan, S.T.M.T', 'image' => '/member/pormanpangaribuan.png'],
+                    ['name' => 'Muhammad Azhar Ismail, S.T.M.T', 'image' => '/member/muhammadazhar.png'],
                 ]
             ],
             [
                 'title' => 'Intelligent Railway System',
-                'icon' => 'fa-train',
-                'head' => ['name' => 'Heru Syah Putra, S.Kom., M.Sc.Eng', 'role' => 'HUE', 'image' => 'hue.png'],
+                'head' => ['name' => 'Heru Syah Putra, S.Kom., M.Sc.Eng', 'image' => '/member/hue.png'],
                 'members' => [
                      ['name' => 'Kharisma Bani Adam, S.T., M.T., Ph.D', 'image' => 'member4.jpg'],
-                    ['name' => 'Agung Surya Wibowo, S.T., M.T.,Ph.D', 'image' => 'member5.jpg'],
-                    ['name' => 'Muhammad Ramdhani, S.T.,M.T', 'image' => 'member6.jpg'],
-                    ['name' => 'M. Rivaldi Ali ASeptian, S.T..,M.Sc.Eng', 'image' => 'member5.jpg'],
+                    ['name' => 'Agung Surya Wibowo, S.T., M.T.,Ph.D', 'image' => '/member/agungsurya.png'],
+                    ['name' => 'Mohamad Ramdhani, S.T.,M.T', 'image' => '/member/mohamadramdhani.png'],
+                    ['name' => 'M. Rivaldi Ali ASeptian, S.T..,M.Sc.Eng', 'image' => '/member/rivaldiali.png'],
                     ['name' => 'Fussy Mentari Dirgantara, S.T.M.T', 'image' => 'member6.jpg'],
                     ['name' => 'Nurwulan Fitriyanti, S.Pd., M.Si, S.T., M.T.', 'image' => 'member4.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
-                    ['name' => 'Name_member, S.T.', 'image' => 'member6.jpg'],
+
                 ]
             ],
             [
                 'title' => 'Intelligent Transportation',
-                'icon' => 'fa-bus',
-                'head' => ['name' => 'Surya M. Nasution, S.T., M.T., Ph.D', 'role' => 'SMN', 'image' => 'member13.jpg'],
+                'head' => ['name' => 'Surya M. Nasution, S.T., M.T., Ph.D', 'image' => '/member/suryanasution.png'],
                 'members' => [
                     ['name' => 'Name_member, S.T., M.T.', 'image' => 'member4.jpg'],
                     ['name' => 'Name_member, S.T.', 'image' => 'member5.jpg'],
@@ -99,9 +83,6 @@
         <div class="mb-5" data-aos="fade-up" data-aos-delay="{{ $index * 100 }}">
             <div class="luxury-card mx-auto" style="max-width: 1200px;">
                 <div class="card-header-custom d-flex align-items-center justify-content-center">
-                    <div class="icon-circle me-3">
-                        <i class="fas {{ $division['icon'] }} fa-2x"></i>
-                    </div>
                     <h3 class="mb-0">{{ $division['title'] }}</h3>
                 </div>
                 
@@ -117,17 +98,9 @@
                                             alt="{{ $division['head']['name'] }}"
                                             onerror="this.src='https://via.placeholder.com/300x300?text=Photo'">
                                     </div>
-                                    <div class="role-badge">
-                                        {{ $division['head']['role'] }}
-                                    </div>
                                 </div>
                                 <div class="member-info text-center">
                                     <h5 class="member-name">{{ $division['head']['name'] }}</h5>
-                                    <div class="social-links">
-                                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>

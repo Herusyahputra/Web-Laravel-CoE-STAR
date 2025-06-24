@@ -27,16 +27,19 @@
             padding: 0;
             overflow-x: hidden;
             scroll-behavior: smooth;
-            padding-top: var(--navbar-height, 70px); /* Default 70px if variable not set */
         }
         
         :root {
-            --navbar-height: 70px;
+            --primary-dark: #212529;    /* Dark black */
+            --secondary-dark: #343a40;  /* Dark gray */
+            --accent-gray: #6c757d;     /* Medium gray */
+            --light-gray: #f8f9fa;      /* Light gray */
+            --hover-gray: #495057;      /* Hover state gray */
         }
         
         /* Add this style to create space for fixed navbar */
         main {
-            padding-top: var(--navbar-height);
+            padding-top: 0;
         }
         
         /* Section Dividers */
@@ -155,8 +158,8 @@
         }
         
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.95) !important;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            background-color: var(--primary-dark) !important; /* Change from rgba(255,255,255,0.95) to match navbar color */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
             padding: 10px 0;
         }
         
@@ -333,49 +336,51 @@
         /* Member Cards */
         .member-card {
             position: relative;
-            padding: 15px;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
-            border-radius: 10px;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 15px;
+        }
+
+        .member-photo {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* Creates a perfect square */
+            margin: 0 auto 15px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+
+        .member-photo img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Changed from cover to contain */
+            background: #f8f9fa; /* Light background for photos */
+            padding: 5px; /* Small padding to prevent edge touching */
+            transition: all 0.3s ease;
         }
 
         .member-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .member-head {
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
         }
 
         .member-info {
-            padding: 15px 0 0;
+            padding: 15px 10px 5px;
+            text-align: center;
         }
 
         .member-name {
-            margin-bottom: 10px;
+            font-size: 1rem;
             font-weight: 600;
-        }
-
-        .role-badge {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background: #0d6efd;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-            border: 3px solid white;
+            color: #333;
+            margin-bottom: 5px;
         }
 
         /* Hexagon Image */
@@ -432,9 +437,8 @@
         }
 
         .social-icon:hover {
-            background: #1a3c6e;
+            background: var(--secondary-dark);
             color: white;
-            transform: translateY(-3px);
         }
 
         /* Media Queries */
@@ -486,8 +490,8 @@
             width: 180px;
             height: 180px;
             margin: 0 auto 15px;
-            border-radius: 50%;
             overflow: hidden;
+            border-radius: 0; /* Changed from 50% to 0 to make it square */
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
@@ -495,7 +499,7 @@
         .member-head .member-photo {
             width: 220px;
             height: 220px;
-            border: 5px solid #0d6efd;
+            border: none; /* Removed blue border */
         }
 
         .member-photo img {
@@ -505,8 +509,8 @@
             transition: all 0.5s ease;
         }
 
-        .member-card:hover .member-photo img {
-            transform: scale(1.1);
+        .member-card:hover .member-photo {
+            transform: translateY(-5px);
         }
 
         .member-info {
@@ -523,7 +527,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            background: #0d6efd;
+            background: var(--secondary-dark);
             color: white;
             border-radius: 50%;
             width: 50px;
@@ -534,7 +538,7 @@
             font-weight: bold;
             font-size: 14px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-            border: 3px solid white;
+            border: 3px solid var(--light-gray);
         }
 
         .social-links {
@@ -556,7 +560,7 @@
         }
 
         .social-icon:hover {
-            background: #0d6efd;
+            background: var(--secondary-dark);
             color: white;
         }
 
@@ -565,7 +569,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border-top: 5px solid #0d6efd;
+            border-top: 5px solid var(--secondary-dark);
         }
 
         .card-header-custom {
@@ -574,7 +578,8 @@
             gap: 15px;
             padding: 20px 30px;
             border-bottom: 1px solid #eee;
-            background-color: #f8f9fa;
+            background: var(--primary-dark);
+            color: white;
         }
 
         .icon-circle {
@@ -609,7 +614,7 @@
             left: 0;
             width: 80px;
             height: 3px;
-            background: #0d6efd;
+            background: var(--secondary-dark);
         }
 
         .team-hero {
@@ -673,8 +678,8 @@
 
         /* Enhanced Footer Styles */
 .footer-luxury {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-top: 5px solid #0d6efd;
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e9ecef 100%);
+    border-top: 5px solid var(--secondary-dark);
 }
 
 .footer-logo {
@@ -684,7 +689,7 @@
 }
 
 .text-gradient {
-    background: linear-gradient(45deg, #0d6efd, #0099ff);
+    background: linear-gradient(45deg, var(--primary-dark), var(--secondary-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -764,7 +769,7 @@
 }
 
 .footer-links a:hover {
-    color: #0d6efd;
+    color: var(--secondary-dark);
     transform: translateX(5px);
 }
 
@@ -807,18 +812,41 @@
     line-height: 1.6;
 }
 
+/* About Page Styles */
+.divider {
+    height: 4px;
+    width: 70px;
+    background-color: var(--secondary-dark);
+}
+
+.info-card {
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-item {
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.expertise-item:hover {
+    transform: translateY(-3px);
+    background-color: #fff !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* Untuk memberikan jarak dari navbar */
+.about-content {
+    padding-top: 100px;
+}
+
 @media (max-width: 768px) {
-    .footer-widget {
-        margin-bottom: 2rem;
-    }
-    
-    .social-circle {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .hover-text {
-        display: none;
+    .about-content {
+        padding-top: 80px;
     }
 }
     </style>
@@ -854,8 +882,8 @@
                             Service
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="{{ url('/konsultasi') }}">Community Service</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/penelitian') }}">Research our Teams</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/community') }}">Community Service</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/research') }}">Research our Teams</a></li>
                         </ul>
                     </li>
                     
@@ -981,7 +1009,7 @@
             mirror: false
         });
         
-        // Navbar scroll effect
+        // Navbar scroll effect - updated to maintain dark color
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {

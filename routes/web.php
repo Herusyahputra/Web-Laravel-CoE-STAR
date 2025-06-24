@@ -44,3 +44,13 @@ Route::get('/visi-misi', function () {
 Route::get('/team', function () {
     return view('pages.team');
 });
+
+Route::get('/community', function () {
+    return view('pages.community');
+});
+Route::get('/donation', function () {
+    return view('pages.donation');
+});
+Route::get('/research', function () {
+    return view('pages.research');
+});
