@@ -25,7 +25,7 @@
                             <div class="col-md-8">
                                 <div class="card-body p-4 p-xl-5">
                                     <p class="lead">
-                                        Menjadi pusat unggulan dalam pendidikan, penelitian, dan pengabdian kepada masyarakat yang inovatif dan berdaya saing global.
+                                        To be a global leader in the advancement of intelligent railways and robotics systems, driving innovation, sustainability, and efficiency in the transportation sector.
                                     </p>
                                 </div>
                             </div>
@@ -51,28 +51,11 @@
                                 <div class="card-body p-4 p-xl-5">
                                     <div class="mission-list">
                                         <div class="d-flex mb-4">
-                                            <div class="mission-number">1</div>
+                                            
                                             <div>
-                                                <p class="mb-0">Menyelenggarakan pendidikan berkualitas untuk menghasilkan lulusan yang kompeten dan berintegritas.</p>
+                                                <p class="mb-0">Our mission is to develop cutting-edge technologies, foster interdisciplinary research, and cultivate talent to create intelligent, safe, and sustainable solutions for the railways and robotics industry. We are committed to addressing the evolving challenges of transportation through collaboration, innovation, and continuous improvement.</p>
                                             </div>
                                         </div>
-                                        <div class="d-flex mb-4">
-                                            <div class="mission-number">2</div>
-                                            <div>
-                                                <p class="mb-0">Mengembangkan penelitian inovatif yang bermanfaat bagi masyarakat.</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mb-4">
-                                            <div class="mission-number">3</div>
-                                            <div>
-                                                <p class="mb-0">Melaksanakan pengabdian kepada masyarakat secara berkelanjutan.</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="mission-number">4</div>
-                                            <div>
-                                                <p class="mb-0">Membangun jejaring kerjasama dengan berbagai pihak di tingkat nasional dan internasional.</p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

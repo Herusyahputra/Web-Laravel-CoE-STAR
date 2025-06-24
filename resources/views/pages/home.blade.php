@@ -6,16 +6,18 @@
 <!-- Hero Section -->
 <section class="hero-section" id="home">
     <div class="position-relative d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <img src="{{ asset('images/banner.jpg') }}" class="img-fluid w-100" style="height: 120vh; object-fit: cover; filter: brightness(0.8);">
+        <img src="{{ asset('images/banner.jpg') }}" class="img-fluid w-100" style="height: 120vh; object-fit: cover; filter: brightness(0.9);">
         <div class="hero-content position-absolute" style="width: 130%; max-width: 1600px;">
             <div class="container-fluid px-0">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="hero-card py-4" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.1); max-width: 90%; margin: 0 auto;">
+                        <div class="hero-card py-4" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.1); max-width: 90%; margin: 0 auto; background-color: rgba(255, 255, 255, 0.7);">
                             <div class="row g-0">
                                 <!-- Ketua Photo Section -->
                                 <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
-                                    <img src="{{ asset('images/leader.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 420px;">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <img src="{{ asset('images/sugiana.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 420px;">
+                                  </div>
                                 </div>
                                 <!-- Quote Section -->
                                 <div class="col-md-5 d-flex align-items-center">
@@ -58,7 +60,7 @@
     <div class="divider-wave"></div>
 </div>
 
-<!-- Research Section -->
+<!-- Activity Section -->
 <section class="research-section" id="research">
     <div class="container my-5">
         <div class="row">
@@ -69,52 +71,89 @@
         <div class="row g-4" data-aos="fade-up" data-aos-duration="1200">
             <!-- Foto 1 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo1.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 1">
+          <img src="{{ asset('images/kegiatan/1.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 1">
             </div>
             <!-- Foto 2 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo1.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 2">
+          <img src="{{ asset('images/kegiatan/2.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 2">
             </div>
             <!-- Foto 3 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo1.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 3">
+          <img src="{{ asset('images/kegiatan/3.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 3">
             </div>
             <!-- Foto 4 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo1.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 4">
+          <img src="{{ asset('images/kegiatan/4.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 4">
             </div>
             <!-- Foto 5 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo2.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 5">
+          <img src="{{ asset('images/kegiatan/5.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 5">
             </div>
             <!-- Foto 6 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo2.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 6">
+          <img src="{{ asset('images/kegiatan/6.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 6">
             </div>
             <!-- Foto 7 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo2.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 7">
+          <img src="{{ asset('images/kegiatan/7.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 7">
             </div>
             <!-- Foto 8 -->
+            <!-- <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/8.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 8">
+            </div> -->
+            <!-- Foto 9 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo2.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 8">
+          <img src="{{ asset('images/kegiatan/9.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 9">
             </div>
-             <!-- Foto 5 -->
+            <!-- Foto 10 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo3.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 5">
+          <img src="{{ asset('images/kegiatan/10.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 10">
             </div>
-            <!-- Foto 6 -->
+            <!-- Foto 11 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo3.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 6">
-            </div>
-            <!-- Foto 7 -->
+          <img src="{{ asset('images/kegiatan/11.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 11">
+            </div>  
+            <!-- Foto 12 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo3.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 7">
+          <img src="{{ asset('images/kegiatan/12.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 12">
             </div>
-            <!-- Foto 8 -->
+            <!-- Foto 13 -->
             <div class="col-md-3 col-sm-6">
-                <img src="{{ asset('images/photo3.jpg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 8">
+          <img src="{{ asset('images/kegiatan/13.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 13">
             </div>
+            <!-- Foto 14 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/14.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 14">
+            </div>  
+            <!-- Foto 15 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/15.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 15">
+            </div>
+            <!-- Foto 16 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/16.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 16">
+            </div>
+            <!-- Foto 17 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/17.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 17">
+            </div>
+            <!-- Foto 18 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/18.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 18">
+            </div>
+            <!-- Foto 19 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/19.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 19">
+            </div>
+            <!-- Foto 20 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/20.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 20">
+            </div>
+            <!-- Foto 21 -->
+            <div class="col-md-3 col-sm-6">
+          <img src="{{ asset('images/kegiatan/21.jpeg') }}" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;" alt="Photo 21">
+            </div>
+        </div>
         </div>
     </div>
 </section>
@@ -320,7 +359,7 @@
         'partner/kcic.png',
         'partner/lrs.png',
         'partner/mrt.png',
-        'partner/thano.jpg',
+        'partner/Thano.jpg',
         ];
       @endphp
       @for ($i = 0; $i < 2; $i++)
