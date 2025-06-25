@@ -16,7 +16,7 @@
                                 <!-- Ketua Photo Section -->
                                 <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
                                   <div class="d-flex justify-content-center align-items-center">
-                                    <img src="{{ asset('images/sugiana.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 420px;">
+                                    <img src="{{ asset('images/sugiana.png') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 420px;">
                                   </div>
                                 </div>
                                 <!-- Quote Section -->
@@ -35,7 +35,6 @@
                                                     <h5 class="mb-0">Dr. Eng. Ahmad Sugiana, S.Si.,M.T</h5>
                                                     <p class="small text-muted mb-0">Director</p>
                                                 </div>
-                                                <img src="{{ asset('images/signature.png') }}" alt="Signature" style="height: 40px;">
                                             </div>
                                         </div>
                                     </div>
